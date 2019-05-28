@@ -1,0 +1,16 @@
+name = SimpleBlog
+description = A simple blog theme with bootstrap 4
+package = Core
+version = 1.0
+core = 7.x
+
+stylesheets[all][] = style.css
+
+regions[header] = Шапка
+regions[navbar] = Верхний блок
+regions[content] = Содержимое страницы
+regions[footer] = Подвал
+
+features[] = name
+features[] = slogan
+features[] = main_menu
