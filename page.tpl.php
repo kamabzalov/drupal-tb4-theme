@@ -19,15 +19,25 @@
     </div>
 </nav>
 
+<?php
+
+if($node->type === 'webform') {
+    $background = $node->field_contact_header_background['und'][0]['filename'];
+} else {
+    $background = $node->field_header_backgorund['und'][0]['filename'];
+}
+
+?>
+
 <!-- Page Header -->
-<header class="masthead">
+<header style="background-image: url(/sites/default/files/<?php print $background;?>)">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1><?php echo $site_slogan; ?></h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                    <h1><?php print render($node->title); ?></h1>
+                    <span class="subheading"><?php print render($node->field_subheader['und'][0]['value']); ?></span>
                 </div>
             </div>
         </div>
@@ -38,7 +48,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-
+            <?php print render($page['content']); ?>
         </div>
     </div>
 </div>

@@ -9,4 +9,3 @@ function simple_blog_links__system_main_menu($variables) {
     $html .= "</ul>";
     return $html;
 }
-
