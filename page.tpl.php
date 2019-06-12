@@ -23,8 +23,10 @@
 
 if($node->type === 'webform') {
     $background = $node->field_contact_header_background['und'][0]['filename'];
+    $subheader = $node->field_contact_subheader['und'][0]['value'];
 } else {
     $background = $node->field_header_backgorund['und'][0]['filename'];
+    $subheader = $node->field_subheader['und'][0]['value'];
 }
 
 ?>
@@ -37,7 +39,7 @@ if($node->type === 'webform') {
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h1><?php print render($node->title); ?></h1>
-                    <span class="subheading"><?php print render($node->field_subheader['und'][0]['value']); ?></span>
+                    <span class="subheading"><?php print $subheader; ?></span>
                 </div>
             </div>
         </div>

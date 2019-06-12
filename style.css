@@ -389,7 +389,7 @@ footer .copyright {
     text-align: center;
 }
 
-.btn {
+.webform-submit {
     font-size: 14px;
     font-weight: 800;
     padding: 15px 25px;
@@ -397,20 +397,20 @@ footer .copyright {
     text-transform: uppercase;
     border-radius: 0;
     font-family: 'Open Sans', 'Times New Roman', serif;
+    color: #fff;
 }
 
-.btn-primary {
+.webform-submit {
     background-color: #0085A1;
     border-color: #0085A1;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.webform-submit:hover, .webform-submit:focus, .webform-submit:active {
     color: #fff;
     background-color: #00657b !important;
     border-color: #00657b !important;
 }
 
-.btn-lg {
+.webform-submit {
     font-size: 16px;
-    padding: 25px 35px;
 }
