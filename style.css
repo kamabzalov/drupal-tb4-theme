@@ -279,36 +279,40 @@ header .post-heading .meta a {
     color: #0085A1;
 }
 
-.post-preview > a > .post-title {
+.post-title {
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.post-preview > a > .post-subtitle {
+.post-title a:hover {
+    text-decoration: none;
+}
+
+.post-subtitle {
     font-weight: 300;
     margin: 0 0 10px;
 }
 
-.post-preview > .post-meta {
+.post-meta {
     font-size: 18px;
     font-style: italic;
     margin-top: 0;
     color: #868e96;
 }
 
-.post-preview > .post-meta > a {
+.post-meta > a {
     text-decoration: none;
     color: #212529;
 }
 
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+.post-meta > a:focus, .post-meta > a:hover {
     text-decoration: underline;
     color: #0085A1;
 }
 
 @media only screen and (min-width: 768px) {
-    .post-preview > a > .post-title {
+    .post-title {
         font-size: 36px;
     }
 }
@@ -413,4 +417,24 @@ footer .copyright {
 
 .webform-submit {
     font-size: 16px;
+}
+
+.more-link a {
+    background-color: #0085a1;
+    border-color: #0085a1;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    float: right;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.more-link a:hover {
+    background-color: #00657b!important;
+    border-color: #00657b!important;
 }

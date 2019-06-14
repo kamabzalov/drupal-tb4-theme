@@ -59,6 +59,7 @@ if($node->type === 'webform') {
 <footer>
     <div class="container">
         <div class="row">
+            <?php print render($page['footer']); ?>
             <div class="col-lg-8 col-md-10 mx-auto">
                 <ul class="list-inline text-center">
                     <li class="list-inline-item">
