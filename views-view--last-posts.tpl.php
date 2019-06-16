@@ -1,8 +1,2 @@
-<?php
-
-print $rows;
-?>
-
-<?php
-print $more;
-
+<?php print $rows; ?>
+<?php print $more; ?>
